@@ -55,10 +55,7 @@ module.exports = {
     ]
   },
   // 如果引用 npm 的 Vue 则放开这里
-  // resolve: {
   //   alias: {
-  //     vue: 'vue/dist/vue.js'
-  //   }
   // },
   plugins: [
     new HtmlWebpackPlugin({
