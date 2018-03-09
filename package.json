@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "./node_modules/.bin/webpack-dev-server --mode development &",
-    "build": "./node_modules/.bin/webpack --mode production"
+    "build": "./node_modules/.bin/webpack --mode production",
+    "release": "echo 'waiting...'"
   },
   "dependencies": {
     "axios": "^0.18.0"

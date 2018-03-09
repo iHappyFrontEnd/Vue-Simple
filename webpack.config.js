@@ -31,7 +31,7 @@ module.exports = {
         use: {
           loader: 'url-loader',
           query: {
-            limit: 10000,
+            limit: 1, // 所有图片不做压缩处理
             name: 'static/img/[name].[ext]'
           }
         }
@@ -41,7 +41,7 @@ module.exports = {
         use: {
           loader: 'url-loader',
           query: {
-            limit: 10000,
+            limit: 1,// 所有字体资源也不做压缩处理
             name: 'static/font/[name].[ext]'
           }
         }
@@ -54,10 +54,8 @@ module.exports = {
       }
     ]
   },
-  // resolve: {
+  // 如果引用 npm 的 Vue 则放开这里
   //   alias: {
-  //     vue: 'vue/dist/vue.js'
-  //   }
   // },
   plugins: [
     new HtmlWebpackPlugin({
